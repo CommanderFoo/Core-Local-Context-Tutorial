@@ -3,9 +3,14 @@ local players = {}
 
 local function OverlappedTrigger(trigger, obj)
 	if obj:IsA("Player") and (not players[obj] or not players[obj][trigger]) then
-		players[obj] = {}
-		players[obj][trigger] = true
+		if(not players[obj]) then
+			players[obj] = {}
+		end
 
+		players[obj][trigger] = true
+		
+		local a = players[obj]
+		
 		if Environment.IsClient() then
 			Events.Broadcast("hidegem", obj, trigger.parent)
 		end
