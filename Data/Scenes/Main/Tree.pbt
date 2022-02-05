@@ -16,7 +16,6 @@ Objects {
   }
   ChildIds: 6942364131953490868
   ChildIds: 5463638614241347857
-  ChildIds: 6514966733461273584
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -32,32 +31,6 @@ Objects {
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 6514966733461273584
-  Name: "Gem Pickups"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3658684489630987374
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Gem Pickups"
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 8616325253792218566
-    }
   }
 }
 Objects {
